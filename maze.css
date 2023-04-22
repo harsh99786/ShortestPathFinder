@@ -1,0 +1,50 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  grid-template-rows: repeat(5, 50px);
+  gap: 5px;
+  justify-content: center;
+}
+
+.grid-item {
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+/* Robot styles */
+.robot {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px #000;
+  transition: transform 0.3s ease;
+}
+
+/* .robot.up {
+  transform: rotate(-90deg);
+}
+
+.robot.right {
+  transform: rotate(0deg);
+}
+
+.robot.down {
+  transform: rotate(90deg);
+}
+
+.robot.left {
+  transform: rotate(180deg);
+} */
+.grid-item-valid{
+  background-color: red;
+}
