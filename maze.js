@@ -5,10 +5,10 @@
     var grid = document.getElementById("grid");
     var maze = [
       [1, 1, 0, 0, 1],
-      [0, 1, 1, 1, 0],
+      [0, 1, 1, 0, 0],
       [0, 0, 1, 0, 1],
       [0, 1, 1, 1, 1],
-      [1, 0, 0, 0, 1]
+      [1, 0, 1, 1, 1]
     ];
     
     
@@ -71,9 +71,8 @@
 }
 
 function runInstructions() {
-  var res = "RDRDDRRD";
+  var res = (document.getElementById('shortest-path-string').value);
   for(let i = 0 ; i<res.length;i++){
-      console.log(res[i]);
       setTimeout(function() {
 moveRobot(res[i]);
 }, 1000*(i+1));

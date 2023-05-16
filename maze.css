@@ -1,3 +1,6 @@
+body{
+  background-color: antiquewhite;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(5, 50px);
@@ -35,4 +38,30 @@
 
 .grid-item-inValid {
   background-color: green;
+}
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+}
+.image-container{
+  margin: 1em;
+}
+.heading-container{
+  text-align: center;
+  margin: 1em;
+  padding: 0em 0.4em 0em 0.4em;
+}
+.grid-button{
+  flex-direction: column;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.btn-container{
+  margin-top: 1em;
+}
+.label-text{
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin-top: 1.2em;
 }
